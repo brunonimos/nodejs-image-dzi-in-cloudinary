@@ -6,7 +6,7 @@
 
 ##Description
 
--It uploads dzi images with tiled sources in cloudinary then works with a modified openseadragon.js plugin. All details are described in README.md.
+-It uploads dzi images with tiled sources in cloudinary then works with a modified openseadragon.js plugin.
 
 ##Version
 
