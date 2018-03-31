@@ -6,7 +6,7 @@
 
 ##Description
 
--It uploads dzi images with tiled sources in cloudinary then works with a modified openseadragon.js plugin.
+-It uploads dzi images with tiled sources in cloudinary then works with a modified openseadragon.js plugin. All details are described in README.md.
 
 ##Version
 
@@ -20,7 +20,13 @@
 
 ##Know bugs
 
--After uploading, reload once more to see all images over caroulsel. Perhaps this delay will be fixed in future versions.
+-After uploading, reload one more time to see all images on the caroulsel. Perhaps this delay will be fixed in future versions.
+
+##Usage
+
+-Commit upload by clicking on confirm icon;
+
+-Click on the image after reload one more time and you will see this in fullscreen.
 
 ##Requirements
 
