@@ -14,7 +14,7 @@
 
 ##Setup
 
--If your server don't use https, delete htaccess file and lines 13 until 23 in server file;
+-If your server don't use https, delete htaccess file and lines from 13 until 23 in server.js file;
 
 -Replace all 'your server url' expressions in js with your url;
 
