@@ -1,22 +1,31 @@
 =============Upload Tiled Sources images with sharp for Node.js=============
 
 ##Name
+
 -nodejs-dzi-in-cloudinary.
 
 ##Description
+
 -It uploads dzi images with tiled sources in cloudinary then works with a modified openseadragon.js plugin.
 
 ##Version
+
 -1.0.0.
 
 ##Setup
+
 -If your server don't use https, delete htaccess file and lines 13 until 23 in server file;
+
 -Replace all 'your server url' expressions in js with your url;
 
 ##Know bugs
+
 -After uploading, reload once more to see all images over caroulsel. Perhaps this delay will be fixed in future versions.
 
 ##Requirements
+
+=======================================
+
 -Node js plugins
 
  -ejs;
@@ -37,6 +46,7 @@
  
  -cloudinary.
 
+=======================================
 
 -Javascript plugins
 
@@ -48,6 +58,7 @@
  
  -Openseadragon.
 
+=======================================
 
 -CSS plugins
 
@@ -57,6 +68,7 @@
  
  -Material Icons (Optional).
 
+=======================================
 
 -ENV Variables
 
@@ -90,12 +102,11 @@
   
   -PGOPTIONS.
 
+=======================================
 
 -Database PostGreSQL (by example, created with ElephantSQL service and managed with PostGRE Admin 4)
 
-Table
-
-content
+Table: content
 
 -titulo, Length 50, Not Null, Primary key, VARCHAR,
 
@@ -103,10 +114,7 @@ content
 
 -date, Default value:now(), Not Null, TIMESTAMP WITHOUT TIME ZONE
 
-
-Table
-
-multimidia
+Table: multimidia
 
 -link, Not Null, Primary key, VARCHAR,
 
@@ -124,8 +132,10 @@ multimidia
 
 -date, Default value:now(), Not Null, TIMESTAMP WITHOUT TIME ZONE
 
+=======================================
 
 ##License
+
 -MIT;
 
 -All plugins are distributed with Free License, MIT License or Apache License and it can be found in ./doc.
