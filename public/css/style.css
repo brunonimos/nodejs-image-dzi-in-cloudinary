@@ -1,0 +1,403 @@
+
+/*Default Color:rgba(59,156,156)*/
+/*Xmas Color:rgba(255,0,0)*/
+
+body {
+  font: 100% Helvetica, sans-serif;
+  height:100px;
+  overflow:auto;
+  background-color: gray;
+}
+
+p {
+  font-size: 2.0em !important;
+  word-spacing: 0.5em;
+  word-break: break-all;
+  text-align: justify;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em;
+}
+
+p:before {
+  content: "\00a0\00a0\00a0\00a0";
+}
+
+em {
+  font-family: News706 BT;
+  -webkit-font-smoothing: antialiased;
+  margin-left:0.1em;
+  font-size: 2.0em !important;
+  line-height: 1.5em;
+}
+
+sub {
+  font-family: News706 BT;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em;
+}
+
+sup {
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em;
+}
+
+b {
+  font-family: News706 BT;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.5em !important;
+}
+
+strong {
+  font-family: News706 BT;
+  -webkit-font-smoothing: antialiased;
+  font-size: 3.0em !important;
+  line-height: 1.5em;
+  margin-left: -0.2em;
+}
+
+h3 {
+  font-family: News706 BT;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em;
+}
+
+h3:before {
+  content: "\00a0";
+}
+
+button[name=ImagePreviewEditRemover] {
+  margin-left: -1.4em;
+  margin-top: 0.5em;
+  opacity: 0.5;
+  color: black;
+  background-color: rgba(59,156,156,0.0);
+  border-color: rgba(0,0,0,0.0);
+  border-radius: 0.1em;
+  padding: 0.2em;
+  padding-bottom: 0.1em;
+  padding-top: 0.1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+button[name=ImagePreviewEditRemover]:hover {
+  opacity: 1.0;
+  background-color: rgba(59,156,156,0.7);
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.off {
+  display: none;
+}
+
+.editar {
+  display: none;
+}
+
+.editbutton {
+  outline:none;
+  display:block;
+  opacity:0.5;
+  color:black;
+  background-color: rgba(255,255,255,0.0);
+  border-color: rgba(255,255,255,0.0);
+  float: right;clear: left;
+  margin-top:1.6em;
+  margin-right:1.3em;
+}
+
+.altcommitbutton {
+  outline:none;
+  border:0;
+  opacity:1.0;
+  float: right;
+  clear: left;
+  display: none;
+  margin-top:0.5em;
+  background-color: rgba(255,255,255,0.0);
+  margin-right:-0.5em;
+}
+
+.apagar {
+  display: none;
+}
+
+.delbutton {
+  outline:none;
+  display:block;
+  opacity:0.5;
+  color:black;
+  background-color: rgba(255,255,255,0.0);
+  border-color: rgba(255,255,255,0.0);
+  float: right;clear: left;
+  margin-top:4.0em;
+  margin-right:1.3em;
+}
+
+.delallbutton {
+  outline:none;
+  opacity:0.5;
+  color:black;
+  background-color: rgba(255,255,255,0.0);
+  border-color: rgba(255,255,255,0.0);
+  float: right;
+  clear: left;
+  display: none;
+  margin-top:2.0em;
+  margin-right:-0.5em;
+}
+
+.buttonToggle {
+  outline: none;
+}
+
+.buttonToggle:hover {
+  color: rgba(59,156,156,1.0)!important;
+  opacity: 1.0!important;
+  filter: alpha(opacity=100)!important;
+}
+
+.centering {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.buttons {
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.9),whitesmoke 400%);
+  color: whitesmoke;
+  font-family: News706 BT;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 0.5em;
+  border: 0.7em;
+  border-color: whitesmoke;
+}
+
+.buttons:hover {
+  background-image: linear-gradient(to bottom,rgba(59,156,156,0.9),whitesmoke 400%);
+  color: black;
+}
+
+.owl-prev {
+  font-family: News706 BT !important;
+  -webkit-font-smoothing: antialiased !important;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,1.0),black 100%) !important;
+  color: whitesmoke !important;
+}
+
+.owl-next:hover {
+  background-image: linear-gradient(to bottom,rgba(59,156,156,1.0),whitesmoke 400%) !important;
+  color: black !important;
+}
+
+.owl-prev:hover {
+  background-image: linear-gradient(to bottom,rgba(59,156,156,1.0),whitesmoke 400%) !important;
+  color: black !important;
+}
+
+.deleterbutton {
+  position: relative;
+  z-index: 1;
+  float: right;
+  clear: left;
+  opacity: 0.5;
+  color: black;
+  background-color: rgba(59,156,156,0.0);
+  border-color: rgba(0,0,0,0.0);
+  border-radius: 0.1em !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.deleterbutton:hover {
+  opacity: 1.0 !important;
+  background-color: rgba(59,156,156,0.7) !important;
+}
+
+.twinTitle {
+  max-width: 90%;
+  margin-left: 0.5em;
+  font-size: 2.0em !important;
+  background-color: rgba(255,255,255,0.0);
+  border: 0;
+  font-family: News706 BT;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.9em;
+}
+
+.twinTitle::-moz-placeholder {
+  font-family: Bitstream Vera Sans Mono;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0,0,0,0.5);
+  font-size: 1.5em !important;
+}
+
+.twinTitle::-webkit-input-placeholder {
+  font-family: Bitstream Vera Sans Mono;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0,0,0,0.5);
+  font-size: 1.5em !important;
+}
+
+.twinTitle:-ms-input-placeholder {
+  font-family: Bitstream Vera Sans Mono;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0,0,0,0.5);
+  font-size: 1.5em !important;
+}
+
+.twinTitle:-moz-input-placeholder {
+  font-family: Bitstream Vera Sans Mono;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0,0,0,0.5);
+  font-size: 1.4em !important;
+}
+
+.twinAuthor {
+  max-width: 101%;
+  font-size: 2.0em !important;
+  word-spacing: 0.5em;
+  word-break: break-all;
+  text-align: justify;
+  background-color: rgba(255,255,255,0.0);
+  border: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em;
+}
+
+.twinAuthor::-moz-placeholder {
+  font-family: Bitstream Vera Sans Mono;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0,0,0,0.5);
+  font-style: italic;
+  font-size: 1.5em !important;
+}
+
+.twinAuthor::-webkit-input-placeholder {
+  font-family: Bitstream Vera Sans Mono;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0,0,0,0.5);
+  font-style: italic;
+  font-size: 1.5em !important;
+}
+
+.twinAuthor:-ms-input-placeholder {
+  font-family: Bitstream Vera Sans Mono;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0,0,0,0.5);
+  font-style: italic;
+  font-size: 1.5em !important;
+}
+
+.twinAuthor:-moz-input-placeholder {
+  font-family: Bitstream Vera Sans Mono;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0,0,0,0.5);
+  font-style: italic;
+  font-size: 1.5em !important;
+}
+
+.imagepreviewEdit {
+  width: 5em;
+  height: 5em;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  margin-left: 0.8em;
+  float: left;
+  clear: right;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 1px black;
+}
+
+.imagesquare {
+  background: rgba(255,255,255,0.0);
+  vertical-align: baseline;
+  position: relative;
+  z-index: 1;
+}
+
+.imageMedia {
+  position: relative;
+  width: 10em !important;
+  height: 5em;
+  margin-bottom: 0.7em;
+  margin-left: -2.6em;
+  border: 1px solid rgba(255,255,255,0.1);
+  -moz-box-shadow: 0 0 1px black;
+	-webkit-box-shadow: 0 0 1px black;
+	box-shadow: 0 0 1px black;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+.imageMedia:hover {
+  cursor:pointer;
+}
+
+.capasquare {
+  background: rgba(255,255,255,0.0);
+  vertical-align: baseline;
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+
+.capaMedia {
+  position: relative;
+  width: 6em !important;
+  height: 11em;
+  margin-bottom: 0.7em;
+  margin-left: -3.0em;
+  border: 1px solid rgba(255,255,255,0.1);  
+  -moz-box-shadow: 0 0 1px black;
+	-webkit-box-shadow: 0 0 1px black;
+	box-shadow: 0 0 1px black;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+  display: inline-block !important;
+}
+
+.capaMedia:hover{
+  cursor:pointer;
+}
+
+.imgView {
+  display: block !important;
+}

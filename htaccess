@@ -1,0 +1,23 @@
+
+RewriteCond %{HTTPS} off
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#Custom 500 errors
+ErrorDocument 500 public/500.html
+
+#Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+#Prevent directory listings
+Options All -Indexes
+
+#Prevent viewing by match file type
+<FilesMatch "\.(htaccess|htpasswd|ini|log)$">
+Order Allow,Deny
+deny from all
+</FilesMatch>

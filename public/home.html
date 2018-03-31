@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>JG - A biblioteca do Centro Espírita Evangélico Jesus Gonçalves CEEJG</title>
+
+<meta charset="UTF-8"/>
+<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://maxcdn.bootstrapcdn.com https://fonts.googleapis.com https://use.fontawesome.com; script-src 'self' 'unsafe-inline' https://maxcdn.bootstrapcdn.com https://cdnjs.cloudflare.com; child-src 'self'; media-src *; img-src * data:; object-src 'self'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://use.fontawesome.com;form-action 'self';"/>
+
+<link rel="stylesheet" href="css/frameworks/owl.carousel.css"></link>
+<link rel="stylesheet" href="css/frameworks/owl.theme.default.css"></link>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="css/frameworks/animate.css"></link>
+
+<script src="js/frameworks/angular.js"></script>
+<script src="js/frameworks/jquery-3.2.1.js"></script>
+<script src="js/frameworks/owl.carousel.js"></script>
+<script src="js/frameworks/openseadragon.js"></script>
+
+<link rel="stylesheet" href="css/style.css"></link>
+
+</head>
+<body>
+
+<div ng-app="myApp">
+
+<article>
+
+<div ng-controller="myCtrl">
+
+<span id="article" class="off">
+
+<div id="msg" class="off">
+<label id="msgtext"></label>
+</div>
+
+<br>
+<br>
+<br>
+
+<div id="add_div">
+
+<button class="buttonToggle editbutton" name="editar" onclick="alterbridge(this);" type="submit"><i class="material-icons">&#xE150;</i></button>
+<form method="POST" class="editar">
+<div id="formheader">
+<button class="buttonToggle altcommitbutton" id="altcommit" type="submit" title="Alterar" name="commit"><i class="material-icons">&#xE5CA;</i></button>
+<input placeholder="Título" pattern=".{1,50}" required title="Título" class="twinTitle" name="newtitle"/>
+
+<div style="margin-left: 1.0em !important" id="imagesPreview"></div>
+</div>
+
+<input class="twinAuthor" type="text" title="Autor" placeholder="Autor:" required value="" name="author">
+
+<input class="buttons" type="file" multiple accept="image/png,image/jpeg,image/jpg" name="files"/>
+</form>
+</div>
+
+<div id="description_div" ng-repeat="content in contents">
+
+<div id="{{content.titulo}}descriptionHeader">
+<br>
+<br>
+
+<button class="buttonToggle delbutton" name="apagar" onclick="deletebridge(this);" type="submit"><i class="material-icons">&#xE16C;</i></button>
+<form method="POST" class="apagar">
+<input style="display: none" type="hidden" name="title" value="{{content.titulo}}">
+<br>
+<br>
+<button class="buttonToggle delallbutton" name="deleteall" type="submit" title="Deletar conteudo"><i class="material-icons">&#xE16C;</i></button>
+</form>
+
+<div class="textlimiter">
+<a style="color:inherit;text-decoration:none;">
+<strong id="title" style="margin-left:0.3em;">{{content.titulo}}</strong>
+</a>
+</div>
+<br>
+</div>
+
+<div>
+<div>
+
+<span>
+<div class="owl-carousel" id="media" style="display: block !important">
+<div ng-repeat="image in content.image track by $index">
+<figure style="display: inline-block" class="{{image.tag}}square" id="{{image.name}}">
+<figcaption class="{{content.titulo}}" id="{{$index}}" style="display: none;margin-left: -8%;position: absolute;max-width: 15em;font-size: 1.0em;">{{image.name}}</figcaption>
+<img onclick="imgshowbridge(this);" alt="{{image.name}}" class="{{image.tag}}Media" ng-src="{{image.link}}">
+</figure>
+</div>
+</div>
+</span>
+<br>
+
+</div>
+
+<div id="{{content.titulo}}-imgView" style="background-color: black;max-width: 90%;max-height: 90%;width: 800px; height: 500px;z-index:3!important;" class="off">
+</div>
+
+</div>
+</div>
+
+</span>
+
+</div>
+
+</article>
+
+</div>
+
+<footer style="bottom: 0;position: relative;">
+
+<div class="centering">
+<!--
+<em style="font-size:0.5em !important;text-align: center">Copyright material available on this api is licensed under the MIT License. To view a copy of this licence, visit https://opensource.org/licenses/MIT’</em><br><br>
+-->
+
+</div>
+
+</footer>
+
+</div>
+
+<script src="js/sessao.js"></script>
+<script src="js/image.js"></script>
+<script async src="js/alter.js"></script>
+<script async src="js/delete.js"></script>
+
+</body>
+</html>

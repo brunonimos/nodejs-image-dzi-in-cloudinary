@@ -1,0 +1,42 @@
+{
+  "name": "nodejs-dzi-in-cloudinary",
+  
+  "version": "1.0.0",
+  
+  "description": "It uploads dzi images with tiled sources in cloudinary then works with a modified openseadragon.js plugin.",
+  
+  "author": {
+    "author": "Bruno Henrique Ferreira de Olivera",
+    "license": "MIT"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brunonimos"
+  },
+
+  "engines": {
+    "node": "6.11.1"
+  },
+  
+  "dependencies": {
+    "ejs": "*",
+    "express": "*",
+    "body-parser": "*",
+    "pg": "*",
+    "sharp": "*",
+    "rmdir": "*",
+    "fs-extra": "*",
+    "multer": "*",
+    "cloudinary": "*"
+  },
+  
+  "devDependencies": {},
+  
+  "bundleDependencies": [],
+  
+  "private": true,
+  
+  "main": "server.js"
+  
+}
