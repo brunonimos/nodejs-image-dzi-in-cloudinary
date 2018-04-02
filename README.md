@@ -116,7 +116,7 @@
 
 =======================================
 
--Database PostGreSQL (by example, created with ElephantSQL service and managed with PostGRE Admin 4)
+-Database PostGreSQL (by example, created with an external PostGreSQL service and managed with PostGRE Admin 4)
 
 Table: content
 
