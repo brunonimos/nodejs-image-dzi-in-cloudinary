@@ -34,85 +34,85 @@
 
 -Server
 
- -Node 6.11.1;
+ Node 6.11.1;
 
 =======================================
 
 -Node js plugins
 
- -ejs;
+ ejs;
  
- -express;
+ express;
  
- -body-parser;
+ body-parser;
  
- -pg;
+ pg;
  
- -sharp;
+ sharp;
  
- -rmdir;
+ rmdir;
  
- -fs-extras;
+ fs-extras;
  
- -multer;
+ multer;
  
- -cloudinary.
+ cloudinary.
 
 =======================================
 
 -Javascript plugins
 
- -Angular.js;
+ Angular.js;
  
- -Jquery;
+ Jquery;
  
- -Owl.caroulsel;
+ Owl.caroulsel;
  
- -Openseadragon.
+ Openseadragon.
 
 =======================================
 
 -CSS plugins
 
- -Owl.caroulel;
+ Owl.caroulel;
  
- -Animate (optional);
+ Animate (optional);
  
- -Material Icons (Optional).
+ Material Icons (Optional).
 
 =======================================
 
 -ENV Variables
 
- -Cloudinary;
+ Cloudinary;
  
-  -CLOUDINARY_KEY;
+  CLOUDINARY_KEY;
   
-  -CLOUDINARY_NAME;
+  CLOUDINARY_NAME;
   
-  -CLOUDINARY_SECRET;
+  CLOUDINARY_SECRET;
   
-  -CLOUDINARY_URL.
+  CLOUDINARY_URL.
   
- -PostGreSQL;
+ PostGreSQL;
  
-  -PGDATABASE.
+  PGDATABASE.
   
-  -PGHOST;
+  PGHOST;
   
-  -PGHOSTADDR;
+  PGHOSTADDR;
   
-  -PGHOST;
+  PGHOST;
   
-  -PGHOSTADDR;
+  PGHOSTADDR;
   
-  -PGPASSWORD;
+  PGPASSWORD;
   
-  -PGPORT;
+  PGPORT;
   
-  -PGUSER;
+  PGUSER;
   
-  -PGOPTIONS.
+  PGOPTIONS.
 
 =======================================
 
